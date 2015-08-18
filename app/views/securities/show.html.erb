@@ -1,0 +1,16 @@
+<article>
+  <header>
+    <h1><%= @security.name %></h1>
+  </header>
+  <h3>Symbol</h3>
+  <p>
+    <%= @security.symbol %>
+  </p>
+  <h3>Exchange</h3>
+  <p>
+    <%= @security.exchange %>
+  </p>
+  <p>Last price: <%= @security.last_price.round(2) %></p>
+</article>
+
+<%= link_to "All Securities", securities_path %>

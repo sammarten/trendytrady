@@ -1,0 +1,7 @@
+<h1><%= pluralize(@securities.size, 'Security') %></h1>
+
+<ul>
+<% @securities.each do |security| %>
+	<li><%= link_to security.symbol, security_url(security) %></li>
+<% end %>
+</ul>
